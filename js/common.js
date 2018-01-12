@@ -52,3 +52,42 @@ $(document).ready(function() {
 	
 });
 
+
+$(document).ready(function() {
+
+    var $container = $(".masonry-container");
+    $container.imagesLoaded(function () {
+        $container.masonry({
+            columnWidth: ".item",
+            itemSelector: ".item"
+        });
+        // $(".item").imagefill();
+    });
+
+
+     $('.button').on('click', function(){
+   $('.button').removeClass('activIsotop');
+   $(this).addClass('activIsotop'); 
+})  
+
+ });
+
+// isotop
+
+$( document ).ready(function() {
+    var $container = $('.isotope');
+    // filter buttons
+    $('#filters button').click(function(){
+		var $this = $(this);
+        // don't proceed if already selected
+        if ( !$this.hasClass('is-checked') ) {
+          $this.parents('#options').find('.is-checked').removeClass('is-checked');
+          $this.addClass('is-checked');
+        }
+      var selector = $this.attr('data-filter');
+      $container.isotope({  itemSelector: '.mix', filter: selector });
+      return false;
+    });
+    
+});
+

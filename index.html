@@ -28,31 +28,38 @@
 </head>
 
 <body>
-
+	<div id="options">
+	<div id="filters" class="controls button-group js-radio-button-group">
+		<button class="button filter is-checked" data-filter="*">ALL</button>
+		<button class="button filter" data-filter=".category-1">1</button>
+		<button class="button filter" data-filter=".category-2">2</button>
+		<button class="button filter" data-filter=".category-3">3</button>
+		<button class="button filter" data-filter=".category-4">4</button>
+		<button class="button filter" data-filter=".category-5">5</button>
+		<button class="button filter" data-filter=".category-6">6</button>
+	</div>
+</div>
 		
 	<div class="container">
 		<div class="row">
-			<div class="masonry-container">
-				<div class="col-md-3 col-sm-3 col-xs-6 item"><img src="img/1.png" alt="alt"></div>
-				<div class="col-md-3 col-sm-3 col-xs-6 item"><img src="img/2.png" alt="alt"></div>
-				<div class="col-md-3 col-sm-3 col-xs-6 item"><img src="img/3.png" alt="alt"></div>
-				<div class="col-md-3 col-sm-3 col-xs-6 item"><img src="img/4.png" alt="alt"></div>
-				<div class="col-md-3 col-sm-3 col-xs-6 item"><img src="img/6.png" alt="alt"></div>
-				<div class="col-md-3 col-sm-3 col-xs-6 item"><img src="img/7.png" alt="alt"></div>
-				<div class="col-md-3 col-sm-3 col-xs-6 item"><img src="img/5.png" alt="alt"></div>
-				<div class="col-md-3 col-sm-3 col-xs-6 item"><img src="img/8.png" alt="alt"></div>
-				<div class="col-md-3 col-sm-3 col-xs-6 item"><img src="img/10.png" alt="alt"></div>
-				<div class="col-md-3 col-sm-3 col-xs-6 item"><img src="img/12.png" alt="alt"></div>
-				<div class="col-md-3 col-sm-3 col-xs-6 item"><img src="img/11.png" alt="alt"></div>
-				<div class="col-md-3 col-sm-3 col-xs-6 item"><img src="img/9.png" alt="alt"></div>
+			<div id="Container" class="masonry-container isotope">
+				<div class="col-md-3 col-sm-3 col-xs-6 item mix category-1" data-myorder="1"><img src="img/1.png" alt="alt"></div>
+				<div class="col-md-3 col-sm-3 col-xs-6 item mix category-1" data-myorder="2"><img src="img/2.png" alt="alt"></div>
+				<div class="col-md-3 col-sm-3 col-xs-6 item mix category-2" data-myorder="3"><img src="img/3.png" alt="alt"></div>
+				<div class="col-md-3 col-sm-3 col-xs-6 item mix category-2" data-myorder="4"><img src="img/4.png" alt="alt"></div>
+				<div class="col-md-3 col-sm-3 col-xs-6 item mix category-3" data-myorder="5"><img src="img/6.png" alt="alt"></div>
+				<div class="col-md-3 col-sm-3 col-xs-6 item mix category-3" data-myorder="6"><img src="img/7.png" alt="alt"></div>
+				<div class="col-md-3 col-sm-3 col-xs-6 item mix category-4" data-myorder="7"><img src="img/5.png" alt="alt"></div>
+				<div class="col-md-3 col-sm-3 col-xs-6 item mix category-4" data-myorder="8"><img src="img/8.png" alt="alt"></div>
+				<div class="col-md-3 col-sm-3 col-xs-6 item mix category-5" data-myorder="9"><img src="img/10.png" alt="alt"></div>
+				<div class="col-md-3 col-sm-3 col-xs-6 item mix category-5" data-myorder="10"><img src="img/12.png" alt="alt"></div>
+				<div class="col-md-3 col-sm-3 col-xs-6 item mix category-6" data-myorder="11"><img src="img/11.png" alt="alt"></div>
+				<div class="col-md-3 col-sm-3 col-xs-6 item mix category-6" data-myorder="12"><img src="img/9.png" alt="alt"></div>
 			</div>
 		</div>
 	</div>
 	
-	
-	
-
-	
+		
 	<div class="hidden"></div>
 
 	<!--[if lt IE 9]>
@@ -70,10 +77,10 @@
 	<script src="libs/animate/animate-css.js"></script>
 	<script src="libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
 	<script src="libs/imagefill/jquery-imagefill.js"></script>
-	<script src="libs/masonry/masonry.pkgd.min.js"></script>
-
-	
+	<script src="libs/masonry/masonry.pkgd.min.js"></script>		
+	<script src="js/isotope.pkgd.min.js"></script>
 	<script src="js/common.js"></script>
+
 	
 </body>
 </html>
